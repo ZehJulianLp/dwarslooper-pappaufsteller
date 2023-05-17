@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(60, 60, 60);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.navbar {
+    background-color: rgb(63, 194, 51);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.navitem {
+    background-color: yellow;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navitem:hover {
+    background-color: rgb(214, 214, 0);
+}
+
+.current {
+    background-color: rgb(184, 184, 0);
+}
+
+.footer {
+    position: absolute;
+    color: rgb(1, 196, 196);
+    justify-content: center;
+    width: 98%;
+    text-align: center;
+
+}
+
+h1 {
+    color:antiquewhite;
+}
+
+h2 {
+    color:antiquewhite;
+    text-align: center;
+}
+
+p {
+    color: lavender;
+}
+
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: #ffd000;
+    padding: 0 32px;
+    transform: 400ms;
+    box-shadow: 0 -2px 16px #ffd000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie-container p {
+    color: rgb(211, 49, 0);
+    margin: 30px;
+}
+
+.cookie-container.active {
+    bottom: 0;
+}
+
+.cookie-button {
+    background-color: rgb(2, 202, 2);
+    border: 0;
+    color: rgb(211, 49, 0);
+    padding: 12px, 48px;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10;
+    font-weight: bold;
+}
+
+.cookie-container img {
+    width: 150px;
+}
+
+.cookie-button:hover {
+    background-color: #947900;
+    color: black;
+}
+::-webkit-scrollbar {
+    width: 10px; /* Breite der Scrollbar */
+  }
+  
+::-webkit-scrollbar-track {
+background: #fffb00; /* Hintergrundfarbe der Scrollbar */
+}
+  
+::-webkit-scrollbar-thumb {
+  background: #00ff00; /* Farbe des Thumbs */
+  border-radius: 5px; /* Runde Ecken des Thumbs */
+}
+  
+::-webkit-scrollbar-thumb:hover {
+  background: #00ad00; /* Farbe des Thumbs bei Hover */
+}
+
+.shop { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopitem {
+    background-color: rgb(63, 194, 51);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    height: 340px;
+    text-align: center;
+
+}
+.shopitem p {
+    color: #fffb00;
+    font-weight: bold;
+    font-size: 18px;
+}
+.shopitem img {
+    width: 100px;
+    position: middle;
+}
+
+.shopimg1 img {
+    width: 200px;
+}
+.shopitem button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    position: sticky;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border-color: yellow;
+    margin-top: 10px;
+}
+
+.shopitem button:hover {
+    background-color: #00ff00;
+    border: #00ad00;
+}
+.shopitem a {
+    text-decoration: none;
+}
+.shopspace {
+    padding: 2.5%;
+}
+
+.disclaimer {
+    background-color: rgb(190, 0, 38);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.emeraldflip img {
+    width: 30px;
+}
+
+.emeraldflip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    border-radius: 15px;
+}
+.emeraldflip a {
+    text-decoration: none;
+    color: #007500;
+    font-weight: bold;
+}
