@@ -7,6 +7,7 @@
     <title>Dwarslooper Pappaufsteller - Shop</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../img/logo.webp" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="navbar">
@@ -14,8 +15,26 @@
         <a href="../" class="navitem current">Shop</a>
         <a href="../../dwars/" class="navitem">Wer ist Dwarslooper</a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="navitem">Nicht klicken!</a>
+        <a href="../cactus/">
+            <div class="basket">
+                <p class="basket-count">0</p>
+                <img src="../../img/cactus.png" alt="Kaktus">
+            </div>
+        </a>
     </div>
-<p>Soon...</p>
+    </div>
+    <div>
+        <h1>Dwarslooper-Logo als Pappaufsteller - 59 Emeralds</h1>
+        <form action="" method="post" class="form">
+            <h2>Wählen Sie eine Variation:</h2>
+            <select name="select" class="select" onchange="showImage()">
+                <option value="old"> Dwarslooper-Logo: alt</option>
+                <option value="new"> Dwarslooper-Logo: aktuell</option>
+            </select>
+            <img id="logoImage" src="" alt="Logo">
+            <input type="submit" value="Zum Kaktus hinzufügen - 59 Emeralds">
+        </form>
+    </div>
     
     <div class="cookie-container">
         <img src="../../img/keks.png" alt="">
@@ -29,5 +48,6 @@
         <footer>Designer: Mixel</footer>
     </div>
     <script src="../../script.js"></script>
+
 </body>
 </html>

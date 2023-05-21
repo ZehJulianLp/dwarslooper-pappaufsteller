@@ -192,3 +192,63 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
     color: #007500;
     font-weight: bold;
 }
+
+.basket {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 0px
+}
+
+.basket img {
+    width: 50px;
+}
+
+.basket:hover {
+    background-color: #947900;
+}
+
+.form {
+    text-align: center;
+    color: red;
+    background-color: #00ad00;
+    padding: 1rem;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.form input[type="submit"] {
+    margin: 30px;
+    padding: 15px;
+    background-color: #ffe600;
+    border: 1px solid #51ff00;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #00ff00;
+    cursor: pointer;
+}
+
+.select {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #51ff00;
+    background-color: #ffe600;
+}
+
+#logoImage {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
