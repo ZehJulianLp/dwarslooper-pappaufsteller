@@ -16,7 +16,7 @@
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="navitem">Nicht klicken!</a>
         <a href="./cactus/">
             <div class="basket">
-                <p class="basket-count">0</p>
+                <p id="basket-count">0</p>
                 <img src="../img/cactus.png" alt="Kaktus">
             </div>
         </a>
@@ -62,5 +62,18 @@
         <footer>Designer: Mixel</footer>
     </div>
     <script src="../script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Warenkorb-Informationen aktualisieren
+        document.getElementById('basket-count').textContent = cart.getTotalItems();
+        
+        function addToCart(event) {
+          event.preventDefault(); // Formularabsendung verhindern
+          var variation = document.querySelector('.select').value;
+          var item = {
+            name: 'Dwarslooper-Logo ' + variation,
+            price: 59
+        }}
+    </script>
 </body>
 </html>

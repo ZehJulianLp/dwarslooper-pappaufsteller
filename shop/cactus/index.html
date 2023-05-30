@@ -7,6 +7,8 @@
     <title>Dwarslooper Pappaufsteller - Shop</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../img/logo.webp" type="image/x-icon">
+
+    
 </head>
 <body>
     <div class="navbar">
@@ -16,7 +18,7 @@
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="navitem">Nicht klicken!</a>
         <a href="../cactus/">
             <div class="basket">
-                <p class="basket-count">0</p>
+                <p id="basket-count">0</p>
                 <img src="../../img/cactus.png" alt="Kaktus">
             </div>
         </a>
@@ -25,8 +27,9 @@
 
     <div>
         <h1>Ihr Kaktus (Warenkorb)</h1>
-        <p>Sinnloser Text</p>
     </div>
+    <div id="cart-container"></div>
+    <h2 id="total-price"></p>
     
     <div class="cookie-container">
         <img src="../../img/keks.png" alt="">
@@ -39,6 +42,21 @@
         <footer>Website-Coder: ZehJulian Lp</footer>
         <footer>Designer: Mixel</footer>
     </div>
+    <script src="script.js"></script>
     <script src="../../script.js"></script>
+    <script src="../cart.js"></script>
+    <script>
+        displayCartItems();
+        // Warenkorb-Informationen aktualisieren
+        document.getElementById('basket-count').textContent = cart.getTotalItems();
+        
+        function addToCart(event) {
+          event.preventDefault(); // Formularabsendung verhindern
+          var variation = document.querySelector('.select').value;
+          var item = {
+            name: 'Dwarslooper-Logo ' + variation,
+            price: 59
+        }}
+    </script>
 </body>
 </html>

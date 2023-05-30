@@ -7,6 +7,7 @@
     <title>Dwarslooper Pappaufsteller - Shop</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../img/logo.webp" type="image/x-icon">
+    <script src="cart.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -17,19 +18,22 @@
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="navitem">Nicht klicken!</a>
         <a href="../cactus/">
             <div class="basket">
-                <p class="basket-count">0</p>
+                <p id="basket-count" class="basket-count">0</p>
                 <img src="../../img/cactus.png" alt="Kaktus">
             </div>
         </a>
     </div>
     </div>
+    <div class="custom-alert" id="custom-alert" style="display: none;">
+        <p id="custom-alert-message"></p>
+    </div>
     <div>
         <h1>Dwarslooper-Logo als Pappaufsteller - 59 Emeralds</h1>
-        <form action="" method="post" class="form">
+        <form action="" method="post" class="form" onsubmit="addToCart(event)">
             <h2>Wählen Sie eine Variation:</h2>
             <select name="select" class="select" onchange="showImage()">
-                <option value="old"> Dwarslooper-Logo: alt</option>
-                <option value="new"> Dwarslooper-Logo: aktuell</option>
+                <option value="alt"> Dwarslooper-Logo: alt</option>
+                <option value="aktuell"> Dwarslooper-Logo: aktuell</option>
             </select>
             <img id="logoImage" src="" alt="Logo">
             <input type="submit" value="Zum Kaktus hinzufügen - 59 Emeralds">
@@ -48,6 +52,27 @@
         <footer>Designer: Mixel</footer>
     </div>
     <script src="../../script.js"></script>
-
+    <script src="../cart.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Warenkorb-Informationen aktualisieren
+        document.getElementById('basket-count').textContent = cart.getTotalItems();
+        
+        function addToCart(event) {
+          event.preventDefault(); // Formularabsendung verhindern
+          var variation = document.querySelector('.select').value;
+          var item = {
+            name: 'Dwarslooper-Logo ' + variation,
+            price: 59
+        }
+         
+          // Artikel zum Warenkorb hinzufügen
+          cart.addItem(item);
+          document.getElementById('basket-count').textContent = cart.getTotalItems();
+          // Optional: Benachrichtigung anzeigen oder andere Aktionen durchführen
+          showCustomAlert("Artikel wurde zum Kaktus hinzugefügt.");
+        }
+        saveCart();
+    </script>
 </body>
 </html>

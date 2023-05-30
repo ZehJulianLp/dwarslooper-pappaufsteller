@@ -252,3 +252,66 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
     margin-left: auto;
     margin-right: auto;
 }
+
+.custom-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #247000;
+    padding: 20px;
+    border: 1px solid #ffd000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    font-weight: bold;
+    color: #ffd000;
+}
+
+.cart-container {
+    margin-top: 30px;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .cart-table th {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .cart-table td {
+    text-align: center;
+    color: #09ff00;
+    font-weight: bold;
+  }
+  
+  .empty-cart {
+    color: #fffb00;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: #ffdb4d;
+    border: none;
+    color: #333;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  
+  button:hover {
+    background-color: #ffd633;
+  }
