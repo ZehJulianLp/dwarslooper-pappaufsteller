@@ -253,6 +253,15 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
     margin-right: auto;
 }
 
+#skinImage {
+    width: 200px;
+    margin-top: 20px;
+    display: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .custom-alert {
     position: fixed;
     top: 50%;
@@ -284,13 +293,15 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
   }
   
   .cart-table th {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
+    color: #00ad00;
+    font-size: 25px;
   }
   
   .cart-table td {
     text-align: center;
-    color: #09ff00;
+    color: #00ff00;
     font-weight: bold;
   }
   
@@ -301,7 +312,7 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
   }
 
   button {
-    background-color: #ffdb4d;
+    background-color: #ffd000;
     border: none;
     color: #333;
     padding: 8px 16px;
@@ -313,5 +324,5 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
   }
   
   button:hover {
-    background-color: #ffd633;
+    background-color: #ffbb00;
   }
