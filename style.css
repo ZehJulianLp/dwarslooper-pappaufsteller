@@ -326,3 +326,58 @@ background: #fffb00; /* Hintergrundfarbe der Scrollbar */
   button:hover {
     background-color: #ffbb00;
   }
+
+  #checkout-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #checkout-container {
+    text-align: center;
+  }
+  
+  #kaktus-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 200px; /* Höhe des Kaktuscontainers anpassen */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  #kaktus-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  #progress-bar-container {
+    width: 80%; /* Geben Sie hier die gewünschte Breite der ProgressBar an */
+    height: 20px; /* Geben Sie hier die gewünschte Höhe der ProgressBar an */
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #43a047;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  #progress-text {
+    margin-top: 10px;
+  }
+  img.item-image {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }

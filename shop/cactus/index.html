@@ -7,8 +7,6 @@
     <title>Dwarslooper Pappaufsteller - Shop</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="shortcut icon" href="../../img/logo.webp" type="image/x-icon">
-
-    
 </head>
 <body>
     <div class="navbar">
@@ -23,14 +21,16 @@
             </div>
         </a>
     </div>
-    </div>
 
     <div>
         <h1>Ihr Kaktus (Warenkorb)</h1>
     </div>
     <div id="cart-container"></div>
-    <h2 id="total-price"></p>
-    
+    <h2 id="total-price"></h2>
+    <div id="checkout" style="display: none;">
+        <button id="checkout-button">Checkout & Bezahlen!</button>
+    </div>
+
     <div class="cookie-container">
         <img src="../../img/keks.png" alt="">
         <p>
@@ -42,21 +42,24 @@
         <footer>Website-Coder: ZehJulian Lp</footer>
         <footer>Designer: Mixel</footer>
     </div>
+
     <script src="script.js"></script>
     <script src="../../script.js"></script>
     <script src="../cart.js"></script>
     <script>
         displayCartItems();
-        // Warenkorb-Informationen aktualisieren
         document.getElementById('basket-count').textContent = cart.getTotalItems();
         
         function addToCart(event) {
-          event.preventDefault(); // Formularabsendung verhindern
+          event.preventDefault();
           var variation = document.querySelector('.select').value;
           var item = {
             name: 'Dwarslooper-Logo ' + variation,
             price: 59
-        }}
+          };
+          cart.addItem(item);
+          document.getElementById('basket-count').textContent = cart.getTotalItems();
+        }
     </script>
 </body>
 </html>

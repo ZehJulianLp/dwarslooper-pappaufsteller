@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwarslooper Pappaufsteller - Shop</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../img/logo.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../.." class="navitem">Home</a>
+        <a href="../" class="navitem current">Shop</a>
+        <a href="../../dwars/" class="navitem">Wer ist Dwarslooper</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="navitem">Nicht klicken!</a>
+        <a href="../cactus/">
+            <div class="basket">
+                <p id="basket-count">0</p>
+                <img src="../../img/cactus.png" alt="Kaktus">
+            </div>
+        </a>
+    </div>
+
+
+    <div id="checkout-container">
+        <h1>Ihr Kaktus (Checkout)</h1>
+        <div id="kaktus-container">
+          <img id="kaktus" src="../../img/cactus.png" alt="Kaktus">
+        </div>
+        <div id="progress-bar-container">
+          <div id="progress-bar"></div>
+          <p id="progress-text">Ihre Items werden zerstört...</p>
+        </div>
+        <svg id="checkmark" class="checkmark" viewBox="0 0 52 52">
+          <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+          <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+      </div>
+      <style media="screen">
+        .checkmark__circle {
+          stroke-dasharray: 166;
+          stroke-dashoffset: 166;
+          stroke-width: 2;
+          stroke-miterlimit: 10;
+          stroke: #7ac142;
+          fill: none;
+          animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+      
+        .checkmark {
+          width: 156px;
+          height: 156px;
+          border-radius: 50%;
+          display: none; /* Setzen Sie das Display auf "none" */
+          stroke-width: 2;
+          stroke: #fff;
+          stroke-miterlimit: 10;
+          margin: 4% auto;
+          box-shadow: inset 0px 0px 0px #7ac142;
+          animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+        }
+      
+        .checkmark__check {
+          transform-origin: 50% 50%;
+          stroke-dasharray: 48;
+          stroke-dashoffset: 48;
+          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+        }
+      
+        @keyframes stroke {
+          100% {
+            stroke-dashoffset: 0;
+          }
+        }
+        @keyframes scale {
+          0%, 100% {
+            transform: none;
+          }
+          50% {
+            transform: scale3d(1.1, 1.1, 1);
+          }
+        }
+        @keyframes fill {
+          100% {
+            box-shadow: inset 0px 0px 0px 130px #7ac142;
+          }
+        }
+      </style>
+    <script src="script.js"></script>
+    <script src="../../script.js"></script>
+    <script src="../cart.js"></script>
+    <div class="cookie-container">
+    <img src="../../img/keks.png" alt="">
+    <p>
+        Hallo, ich bin KrümelKeksHD! Darf ich mit auf der Website sein? Wenn du auf Akzeptieren drückst, sagst du JA zu Keksen (Cookies). 
+    </p>
+    <button class="cookie-button">Akzeptieren</button>
+</div>
