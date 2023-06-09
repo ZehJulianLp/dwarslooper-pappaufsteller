@@ -2,4 +2,4 @@
 
 Joke Website for Dwarslooper.
 
-http://dwarslooper-pappaufsteller.42web.io/
+https://dwarslooper-pappaufsteller.store/
