@@ -77,6 +77,10 @@ function generateImagePath(itemName) {
     imagePath = '../../img/skins/orange.png';
   } else if (itemName === 'Dwarslooper-Skin: Streifenshirt') {
     imagePath = '../../img/skins/streifen.png';
+  } else if (itemName === 'TJC-UFO: standard') {
+    imagePath = '../../img/ufo.png';
+  } else if (itemName === 'TJC-UFO: schnell') {
+    imagePath = '../../img/ufo.png';
   }  return imagePath;
 }
 function createItemImage(imagePath) {

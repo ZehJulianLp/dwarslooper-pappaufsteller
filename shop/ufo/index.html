@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwarslooper Pappaufsteller - Shop</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../img/logo.webp" type="image/x-icon">
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../.." class="navitem">Home</a>
+        <a href="../" class="navitem current">Shop</a>
+        <a href="../../dwars/" class="navitem">Wer ist Dwarslooper</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="navitem">Nicht klicken!</a>
+        <a href="../cactus/">
+            <div class="basket">
+                <p id="basket-count" class="basket-count">0</p>
+                <img src="../../img/cactus.png" alt="Kaktus">
+            </div>
+        </a>
+    </div>
+    </div>
+    <div class="custom-alert" id="custom-alert" style="display: none;">
+        <p id="custom-alert-message"></p>
+    </div>
+    <div>
+        <h1>TJC-UFO - 800 Emeralds</h1>
+        <form action="" method="post" class="form" onsubmit="addToCart(event)">
+            <h2>Wählen Sie eine Variation:</h2>
+            <select name="select" class="select" onchange="showImage()">
+                <option value="standard"> TJC-UFO: Standard</option>
+                <option value="schnell"> TJC-UFO: Ultra schnell</option>
+            </select>
+            <img id="logoImage" src="" alt="Logo">
+            <input type="submit" value="Zum Kaktus hinzufügen - 800 Emeralds">
+        </form>
+    </div>
+    
+    <img class="ufo_ad" src="../../img/tjc_ufo_ad.png" alt="">
+
+    <div class="cookie-container">
+        <img src="../../img/keks.png" alt="">
+        <p>
+            Hallo, ich bin KrümelKeksHD! Darf ich mit auf der Website sein? Wenn du auf Akzeptieren drückst, sagst du JA zu Keksen (Cookies). 
+        </p>
+        <button class="cookie-button">Akzeptieren</button>
+    </div>
+    <div class="footer">
+        <footer>Website-Coder: ZehJulian Lp</footer>
+        <footer>Designer: Mixel</footer>
+    </div>
+    <script src="../../script.js"></script>
+    <script src="../cart.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Warenkorb-Informationen aktualisieren
+        document.getElementById('basket-count').textContent = cart.getTotalItems();
+        
+        function addToCart(event) {
+          event.preventDefault(); // Formularabsendung verhindern
+          var variation = document.querySelector('.select').value;
+          var item = {
+            name: 'TJC-UFO: ' + variation,
+            price: 800
+        }
+         
+          // Artikel zum Warenkorb hinzufügen
+          cart.addItem(item);
+          document.getElementById('basket-count').textContent = cart.getTotalItems();
+          // Optional: Benachrichtigung anzeigen oder andere Aktionen durchführen
+          showCustomAlert("Artikel wurde zum Kaktus hinzugefügt.");
+        }
+        saveCart();
+    </script>
+</body>
+</html>
